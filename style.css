@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243224;
+    background: #fffdf8;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.topbar {
+    background: #176b3a;
+    padding: 10px 0;
+}
+
+.nav-area,
+.brand,
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-area {
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.brand img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-links {
+    justify-content: center;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 4px;
+}
+
+.nav-links a:hover {
+    color: #ffd45a;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 0;
+    border-radius: 5px;
+    background: #f5b820;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #ffd45a;
+}
+
+.small-button {
+    padding: 9px 14px;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(rgba(16, 39, 24, .72), rgba(16, 39, 24, .72)), url("image/img2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    line-height: 1.15;
+    margin: 10px 0 18px;
+}
+
+.hero p:not(.tag) {
+    font-size: 18px;
+    max-width: 580px;
+    margin-bottom: 26px;
+}
+
+.section {
+    padding: 75px 0;
+}
+
+.light-section {
+    background: #f1f6ef;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 620px;
+    margin: 0 auto 35px;
+}
+
+.section-heading h2,
+.about-content h2 {
+    font-size: 32px;
+    margin: 6px 0 8px;
+    line-height: 1.25;
+}
+
+.section-heading p {
+    margin: 0;
+    color: #5a655b;
+}
+
+.tag {
+    display: inline-block;
+    margin: 0;
+    color: #ffe38b;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.dark-tag {
+    color: #c57c00 !important;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.menu-grid .food-card {
+    width: calc(33.33% - 15px);
+}
+
+.food-card,
+.service-card,
+.deal-card,
+blockquote,
+.contact-details,
+.contact-form {
+    background: white;
+    border-radius: 8px;
+}
+
+.food-card {
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+}
+
+.food-card:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
+}
+
+.food-card img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 18px;
+}
+
+h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.card-text p,
+.service-card p,
+.deal-card p {
+    margin: 0;
+    color: #5a655b;
+}
+
+.service-grid .service-card,
+.deal-grid .deal-card,
+.review-grid blockquote {
+    width: calc(33.33% - 15px);
+}
+
+.service-card {
+    text-align: center;
+    padding: 28px 20px;
+    border: 1px solid #e1e8df;
+}
+
+.service-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.deals {
+    background: #fff8df;
+}
+
+.deal-grid {
+    align-items: stretch;
+}
+
+.deal-card {
+    padding: 28px 22px;
+    border: 1px solid #ead8a3;
+    text-align: center;
+}
+
+.deal-card strong {
+    display: block;
+    margin-top: 18px;
+    color: #176b3a;
+    font-size: 21px;
+}
+
+.featured {
+    border: 2px solid #e7a80b;
+}
+
+.deal-label {
+    color: #bb7600 !important;
+    font-weight: bold;
+    margin-bottom: 10px !important;
+}
+
+.about-section {
+    background: #176b3a;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-content>div:first-child {
+    width: 42%;
+}
+
+.about-content>div:last-child {
+    width: 58%;
+}
+
+.about-content p {
+    margin-top: 0;
+}
+
+.text-link {
+    color: #ffe38b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.review-section {
+    background: #27362a;
+}
+
+.white-heading h2 {
+    color: white;
+}
+
+blockquote {
+    margin: 0;
+    padding: 24px;
+    border-left: 4px solid #f5b820;
+}
+
+cite {
+    display: block;
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: bold;
+    color: #176b3a;
+}
+
+.contact-layout {
+    display: flex;
+    gap: 28px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.contact-details {
+    width: 45%;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-details,
+.contact-form {
+    padding: 28px;
+    border: 1px solid #dfe7dc;
+}
+
+.contact-details p {
+    margin: 12px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+input,
+textarea {
+    font: inherit;
+    padding: 10px;
+    border: 1px solid #bfc9bd;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.contact-form .button {
+    align-self: flex-start;
+}
+
+footer {
+    background: #102817;
+    color: #e7eee7;
+    text-align: center;
+    padding: 18px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .nav-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .menu-grid .food-card {
+        width: calc(50% - 11px);
+    }
+
+    .about-content,
+    .contact-layout {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-content>div:first-child,
+    .about-content>div:last-child,
+    .contact-details,
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        min-height: 470px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 55px 0;
+    }
+
+    .section-heading h2,
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .menu-grid .food-card,
+    .service-grid .service-card,
+    .deal-grid .deal-card,
+    .review-grid blockquote {
+        width: 100%;
+    }
+
+    .brand {
+        font-size: 18px;
+    }
+}
